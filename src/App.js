@@ -1,21 +1,15 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
+import { ChakraProvider, theme } from '@chakra-ui/react';
 import { Navbar } from './components/Navbar';
+import { HeroSection } from './sections/HeroSection';
+import { CircleIndicator } from './components/CircleIndicator';
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
-
   return (
-    <>
+    <ChakraProvider theme={theme}>
       <Navbar />
-      <header>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      </header>
-    </>
+      <HeroSection />
+      <CircleIndicator />
+    </ChakraProvider>
   );
 }
 

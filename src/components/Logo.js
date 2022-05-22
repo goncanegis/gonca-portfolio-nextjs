@@ -6,8 +6,6 @@ export const Logo = ({ className, alt }) => {
       height="200"
       fill="none"
       viewBox="0 0 200 200"
-      className={className}
-      alt={alt}
     >
       <path
         fill="#78E5E1"
