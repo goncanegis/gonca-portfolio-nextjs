@@ -34,6 +34,7 @@ export const CustomButton = ({ href, label }) => {
           textDecoration: 'none',
           color: linkHoverColor,
         }}
+        letterSpacing={1}
       >
         {label}
       </Link>

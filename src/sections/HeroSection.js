@@ -119,8 +119,10 @@ export const HeroSection = () => {
 
         {/* Hero image */}
         <Flex
-          w={'100%'}
-          minH={'40vh'}
+          // w={'100%'}
+          // sx={{ height: 'clamp(208px, 40vh, 346px)' }}
+          height={{ base: '212px', sm: '303px', md: '363px', lg: '424px' }}
+          width={{ base: '350px', sm: '500px', md: '600px', lg: '700px' }}
           pt={8}
           pb={2}
           px={6}
