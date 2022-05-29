@@ -52,7 +52,7 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Image src={logo} alt="logo" w={16} h={16} />
+        <Image src={logo} alt="logo" w={10} h={10} />
         <Text>© 2022 Gonca Negis. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>

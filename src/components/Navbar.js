@@ -18,12 +18,7 @@ import {
   Fade,
   transition,
 } from '@chakra-ui/react';
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import logo from '../assets/img/logo.svg';
@@ -147,7 +142,7 @@ export const Navbar = () => {
                 textDecoration: 'none',
               }}
             >
-              <Text fontWeight={600} fontSize="3xl" color={mobileNavLinkColor}>
+              <Text fontWeight={600} fontSize="3xl" color={'gray.200'}>
                 {navItem.label}
               </Text>
             </Flex>

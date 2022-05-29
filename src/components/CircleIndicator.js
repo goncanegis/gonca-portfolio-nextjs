@@ -7,7 +7,7 @@ import {
   useTransform,
 } from 'framer-motion';
 
-import { Box } from '@chakra-ui/react';
+import { Box, useColorMode } from '@chakra-ui/react';
 
 export const CircleIndicator = () => {
   const [isComplete, setIsComplete] = useState(false);
@@ -18,12 +18,12 @@ export const CircleIndicator = () => {
   useEffect(() => yRange.onChange(v => setIsComplete(v >= 1)), [yRange]);
 
   return (
-    <Box position={'fixed'} top={'5rem'} left={'2rem'} width={'4rem'}>
+    <Box position={'fixed'} top={'7rem'} left={'2rem'} width={'4rem'}>
       <svg className="progress-icon" viewBox="0 0 60 60">
         <motion.path
           fill="none"
           strokeWidth="5"
-          stroke="white"
+          stroke={'#AA8CE4'}
           strokeDasharray="0 1"
           d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
           style={{
@@ -37,7 +37,7 @@ export const CircleIndicator = () => {
         <motion.path
           fill="none"
           strokeWidth="5"
-          stroke="white"
+          stroke={'#AA8CE4'}
           d="M14,26 L 22,33 L 35,16"
           initial={false}
           strokeDasharray="0 1"

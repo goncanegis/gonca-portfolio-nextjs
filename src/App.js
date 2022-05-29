@@ -4,6 +4,8 @@ import { HeroSection } from './sections/HeroSection';
 import { CircleIndicator } from './components/CircleIndicator';
 import { AboutMeSection } from './sections/AboutMeSection';
 import Footer from './components/Footer';
+import ProjectsSection from './sections/ProjectsSection';
+import ContactSection from './sections/ContactSection';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Navbar />
       <HeroSection />
       <AboutMeSection />
+      <ProjectsSection />
+      <ContactSection />
       <Footer />
       <CircleIndicator />
     </ChakraProvider>

@@ -11,6 +11,7 @@ import {
   chakra,
   SimpleGrid,
   Icon,
+  Tooltip,
 } from '@chakra-ui/react';
 
 import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript } from 'react-icons/io';
@@ -23,8 +24,6 @@ import {
 } from 'react-icons/si';
 
 import mobileIcon from '../assets/img/mobile-ui-1.svg';
-
-import { CustomButton } from '../components/CustomButton';
 
 function StatsCard(props) {
   const { icon } = props;
@@ -41,8 +40,8 @@ function StatsCard(props) {
       rounded={'lg'}
       transition="all 0.2s"
       _hover={{
-        borderColor: useColorModeValue('purple.400', 'gray.300'),
-        color: useColorModeValue('purple.700', 'gray.300'),
+        borderColor: useColorModeValue('purple.400', 'purple.300'),
+        color: useColorModeValue('purple.700', 'purple.300'),
       }}
     >
       {icon}
@@ -84,7 +83,7 @@ const mobileVariants = {
 
 export const AboutMeSection = () => {
   const bg = useColorModeValue('white', 'gray.100');
-  const textColor = useColorModeValue('gray.600', 'gray.200');
+  const textColor = useColorModeValue('gray.700', 'gray.200');
 
   return (
     <Container
@@ -98,7 +97,12 @@ export const AboutMeSection = () => {
       pb={8}
       position="relative"
     >
-      <Heading mb={6} color={textColor} letterSpacing={2}>
+      <Heading
+        mb={6}
+        color={textColor}
+        letterSpacing={2}
+        fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+      >
         About Me
       </Heading>
 
