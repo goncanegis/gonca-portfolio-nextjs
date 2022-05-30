@@ -185,8 +185,8 @@ export const AboutMeSection = () => {
               variants={draw}
               d="M837.5 477H89.5V519H837.5V477Z"
               stroke="black"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
               fill={'none'}
             />
             <motion.path
@@ -204,31 +204,31 @@ export const AboutMeSection = () => {
               variants={draw}
               d="M484.42 352H455V304H547.09"
               stroke="black"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
               fill={'none'}
             />
             <motion.path
               variants={draw}
               d="M855 304V352H747.15"
               stroke="black"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
               fill={'none'}
             />
             <motion.path
               variants={draw}
               d="M547.09 304H739.92"
               stroke="black"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <motion.path
               variants={draw}
               d="M333 1H1V216H333V1Z"
               stroke="black"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
               fill="none"
             />
             <motion.path

@@ -1,11 +1,17 @@
 <svg width="455" height="606" viewBox="0 0 455 606" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M159.553 189.641L59.171 604.271H259.934L159.553 189.641Z" fill="#B37361"/>
-<path d="M303.526 0.314453L152.197 604.271H454.855L303.526 0.314453Z" fill="#99574A"/>
-<path d="M159.552 320.82V604.271" stroke="#FBDC8E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M303.526 172.969V604.271" stroke="#FBDC8E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M159.552 426.721L186.184 400.088" stroke="#FBDC8E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M159.553 541.741L118.131 500.317" stroke="#FBDC8E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M303.526 296.174L273.237 265.883" stroke="#FBDC8E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M303.526 470.539L363.868 410.18" stroke="#FBDC8E" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M103.895 604.271C104.649 599.81 105.028 595.294 105.026 590.77C105.026 554.86 81.671 525.753 52.855 525.753C24.0394 525.753 0.684085 554.86 0.684085 590.77C0.682785 595.294 1.06179 599.81 1.81579 604.271H103.895Z" fill="#99574A"/>
+  <path d="M159.553 189.641L59.171 604.271H259.934L159.553 189.641Z" fill="#B37361" />
+  <path d="M303.526 0.314453L152.197 604.271H454.855L303.526 0.314453Z" fill="#99574A" />
+  <path d="M159.552 320.82V604.271" stroke="#FBDC8E" strokeWidth="3" strokeMiterlimit="10" stroke-linecap="round" />
+  <path d="M303.526 172.969V604.271" stroke="#FBDC8E" strokeWidth="3" strokeMiterlimit="10" stroke-linecap="round" />
+  <path d="M159.552 426.721L186.184 400.088" stroke="#FBDC8E" strokeWidth="3" strokeMiterlimit="10"
+    stroke-linecap="round" />
+  <path d="M159.553 541.741L118.131 500.317" stroke="#FBDC8E" strokeWidth="3" strokeMiterlimit="10"
+    stroke-linecap="round" />
+  <path d="M303.526 296.174L273.237 265.883" stroke="#FBDC8E" strokeWidth="3" strokeMiterlimit="10"
+    stroke-linecap="round" />
+  <path d="M303.526 470.539L363.868 410.18" stroke="#FBDC8E" strokeWidth="3" strokeMiterlimit="10"
+    stroke-linecap="round" />
+  <path
+    d="M103.895 604.271C104.649 599.81 105.028 595.294 105.026 590.77C105.026 554.86 81.671 525.753 52.855 525.753C24.0394 525.753 0.684085 554.86 0.684085 590.77C0.682785 595.294 1.06179 599.81 1.81579 604.271H103.895Z"
+    fill="#99574A" />
 </svg>
