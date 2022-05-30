@@ -77,7 +77,7 @@ export default function ProjectsSection() {
             lineHeight={'110%'}
           >
             Some projects <br />
-            <Text as={'span'} color={'teal.400'}>
+            <Text as={'span'} color={useColorModeValue('teal.400', 'teal.200')}>
               I have built
             </Text>
           </Heading>

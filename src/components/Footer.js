@@ -3,7 +3,7 @@ import {
   chakra,
   Container,
   Image,
-  Link,
+  Icon,
   Stack,
   Text,
   useColorModeValue,
@@ -33,13 +33,31 @@ export default function Footer() {
         <Text>© 2022 Gonca Negis. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Github'} href={'https://github.com/goncanegis'}>
-            <FaGithub />
+            <Icon
+              as={FaGithub}
+              width={6}
+              height={6}
+              color={useColorModeValue('purple.500', 'purple.300')}
+              transition="all 0.2s"
+              _hover={{
+                color: useColorModeValue('purple.700', 'purple.400'),
+              }}
+            />
           </SocialButton>{' '}
           <SocialButton
             label={'LinkedIn'}
             href={'https://www.linkedin.com/in/goncanegis/'}
           >
-            <FaLinkedin />
+            <Icon
+              as={FaLinkedin}
+              width={6}
+              height={6}
+              color={useColorModeValue('purple.500', 'purple.300')}
+              transition="all 0.2s"
+              _hover={{
+                color: useColorModeValue('purple.700', 'purple.400'),
+              }}
+            />
           </SocialButton>
         </Stack>
       </Container>

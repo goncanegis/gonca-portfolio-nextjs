@@ -77,21 +77,14 @@ export const HeroSection = () => {
   };
 
   return (
-    <Container
-      as="section"
-      w={'100%'}
-      maxWidth="7xl"
-      minH={'50vh'}
-      centerContent
-      pt={8}
-      id="home"
-    >
+    <Container as="section" w={'100%'} maxWidth="7xl" py={8} id="home">
       <Stack
         w={'100%'}
         textAlign={'center'}
         align={'center'}
-        spacing={{ base: 4, md: 6, lg: 8 }}
-        py={{ base: 20, md: 28 }}
+        spacing={{ base: 6, md: 8, lg: 10 }}
+        pt={{ base: 20, md: 28 }}
+        pb={{ base: 10, md: 18 }}
       >
         <Flex align="center">
           <Text
@@ -126,7 +119,7 @@ export const HeroSection = () => {
           as="h1"
           fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
           color={useColorModeValue('gray.600', 'gray.200')}
-          mt={6}
+          sx={{ marginTop: '0 !important' }}
         >
           I'm Gonca.
         </Text>
