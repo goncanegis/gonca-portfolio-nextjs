@@ -1,20 +1,10 @@
 import {
   Box,
-  Button,
   Flex,
   Heading,
-  Icon,
-  IconButton,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Link,
-  Stack,
-  Textarea,
   useColorModeValue,
   VStack,
   Text,
-  useToast,
   Image,
 } from '@chakra-ui/react';
 
@@ -117,8 +107,8 @@ export default function ContactSection() {
     >
       <Box
         borderRadius="lg"
-        m={{ base: 5, md: 16, lg: 10 }}
-        // mx={{ base: 5, md: 16, lf: 10 }}
+        mt={{ base: 5, md: 16, lg: 10 }}
+        mx={{ base: 5, md: 16, lg: 10 }}
         pt={{ base: 5, lg: 16 }}
         px={{ base: 4, lg: 16 }}
         pb={0}
@@ -126,15 +116,15 @@ export default function ContactSection() {
         maxW="1200px"
         overflow="hidden"
       >
-        <Box>
-          <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
+        <Box mb={'4rem'}>
+          <VStack spacing={{ base: 4, md: 8, lg: 12 }}>
             <Heading
               fontSize={{
                 base: '4xl',
                 md: '5xl',
               }}
             >
-              Get in Touch
+              Contact Me
             </Heading>
 
             <Text fontSize="xl" textAlign="center">
@@ -159,6 +149,7 @@ export default function ContactSection() {
           left="0"
           objectFit="contain"
           zIndex={2}
+          filter={useColorModeValue('none', 'brightness(40%)')}
         />
 
         <Image
@@ -171,6 +162,7 @@ export default function ContactSection() {
           left="50%"
           objectFit="contain"
           zIndex={1}
+          filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
         <Image
@@ -182,6 +174,7 @@ export default function ContactSection() {
           zIndex={2}
           src={treesLeftIcon}
           variants={treeVariants}
+          filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
         <Image
@@ -193,17 +186,19 @@ export default function ContactSection() {
           zIndex={2}
           src={treesRightIcon}
           variants={treeVariants}
+          filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
         <Image
           as={motion.img}
           position="absolute"
           right="17%"
-          top={{ md: '60%', lg: '58%', xl: '56%' }}
+          top={{ md: '67%', lg: '58%', xl: '56%' }}
           width="8%"
           zIndex={1}
           src={treesFarIcon}
           variants={treeVariants}
+          filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
         <Image
@@ -211,11 +206,12 @@ export default function ContactSection() {
           position="absolute"
           left="100%"
           bottom={'0%'}
-          width="10%"
+          width="18%"
           src={scooterWomanIcon}
           variants={scooterVariants}
           zIndex={3}
           style={{ originX: '50%', originY: '50%' }}
+          filter={useColorModeValue('none', 'brightness(90%)')}
         />
       </Box>
     </Flex>

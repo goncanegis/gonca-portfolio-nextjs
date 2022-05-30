@@ -75,7 +75,7 @@ export default function ContactForm() {
 
   return (
     <Stack
-      spacing={{ base: 4, md: 8, lg: 20 }}
+      m={{ base: 4, md: 8, lg: 20 }}
       direction={{ base: 'column', md: 'row' }}
       zIndex={5}
     >

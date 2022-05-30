@@ -90,23 +90,26 @@ export const AboutMeSection = () => {
       as={motion.section}
       initial="hidden"
       whileInView="visible"
-      maxWidth={'75%'}
+      maxWidth={'7xl'}
       minH={'50vh'}
       centerContent
-      pt={8}
-      pb={8}
+      py={10}
       position="relative"
     >
       <Heading
         mb={6}
         color={textColor}
         letterSpacing={2}
-        fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+        fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+        textAlign="center"
+        id="about"
+        className="section-heading"
+        display={'inline-block'}
       >
         About Me
       </Heading>
 
-      <Flex width={'65vw'} align="center" justify={'center'} flexWrap="wrap">
+      <Flex width={'75%'} align="center" justify={'center'} flexWrap="wrap">
         <Box
           width={{ base: '100%', lg: '50%' }}
           mb={{ base: 6, lg: 0 }}

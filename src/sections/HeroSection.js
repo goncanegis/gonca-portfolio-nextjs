@@ -39,10 +39,10 @@ export const HeroSection = () => {
 
   const womanImageVariants = {
     hidden: {
-      bottom: '100%',
+      y: -200,
     },
     show: {
-      bottom: ['100%', '2%', '4%', '2%'],
+      y: [-200, 0, -30, 0],
     },
   };
 
@@ -77,50 +77,62 @@ export const HeroSection = () => {
   };
 
   return (
-    <Container as="section" w={'100%'} minH={'50vh'} centerContent pt={8}>
+    <Container
+      as="section"
+      w={'100%'}
+      maxWidth="7xl"
+      minH={'50vh'}
+      centerContent
+      pt={8}
+      id="home"
+    >
       <Stack
         w={'100%'}
         textAlign={'center'}
         align={'center'}
-        spacing={{ base: 8, md: 10 }}
+        spacing={{ base: 4, md: 6, lg: 8 }}
         py={{ base: 20, md: 28 }}
       >
-        <Heading
-          fontWeight={600}
-          fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-          lineHeight={'110%'}
-        >
-          <Flex>
-            <Text color={useColorModeValue('#e8645f', '#FBDC8D')}>
-              Hi there!
-            </Text>
-            <motion.div
-              style={{
-                display: 'inline-block',
-                fontSize: '0.75em',
-                marginLeft: '0.5em',
-              }}
-              animate={{ rotate: [20, 0, 20, 0, 20, 0] }}
-              transition={{
-                from: 0,
-                duration: 0.7,
-                ease: 'easeInOut',
-                type: 'tween',
-              }}
-            >
-              👋
-            </motion.div>
-          </Flex>
-
-          <Text color={useColorModeValue('gray.600', 'gray.200')}>
-            I'm Gonca.
+        <Flex align="center">
+          <Text
+            as="h1"
+            fontWeight={600}
+            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+            lineHeight={'110%'}
+            color={useColorModeValue('purple.500', '#FBDC8D')}
+            style={{ display: 'inline-flex' }}
+          >
+            Hi there!
           </Text>
-        </Heading>
+          <Text
+            as={motion.h1}
+            style={{
+              display: 'inline-flex',
+              marginLeft: '0.5em',
+            }}
+            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+            animate={{ rotate: [20, 0, 20, 0, 20, 0] }}
+            transition={{
+              from: 0,
+              duration: 0.7,
+              ease: 'easeInOut',
+              type: 'tween',
+            }}
+          >
+            👋
+          </Text>
+        </Flex>
+        <Text
+          as="h1"
+          fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+          color={useColorModeValue('gray.600', 'gray.200')}
+          mt={6}
+        >
+          I'm Gonca.
+        </Text>
 
         {/* Hero image */}
         <Flex
-          // w={'100%'}
-          // sx={{ height: 'clamp(208px, 40vh, 346px)' }}
           height={{ base: '212px', sm: '303px', md: '363px', lg: '424px' }}
           width={{ base: '350px', sm: '500px', md: '600px', lg: '700px' }}
           pt={8}
@@ -152,7 +164,7 @@ export const HeroSection = () => {
             src={codingIcons.woman}
             variants={womanImageVariants}
             position="absolute"
-            w={'40%'}
+            w={'38%'}
             left={'37%'}
           />
           <Image
@@ -223,13 +235,13 @@ export const HeroSection = () => {
           color={useColorModeValue('gray.600', 'gray.400')}
           fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}
           lineHeight={'110%'}
+          mt={6}
         >
           I came here to drink milk and build apps, and I've just finished my
           milk.
         </Text>
         <CustomButton href="#contact" label={"Let's get in touch!"} />
       </Stack>
-      <Stack spacing={6} direction={'row'}></Stack>
     </Container>
   );
 };

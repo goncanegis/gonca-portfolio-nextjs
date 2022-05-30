@@ -18,7 +18,13 @@ export const CircleIndicator = () => {
   useEffect(() => yRange.onChange(v => setIsComplete(v >= 1)), [yRange]);
 
   return (
-    <Box position={'fixed'} top={'7rem'} left={'2rem'} width={'4rem'}>
+    <Box
+      position={'fixed'}
+      bottom={'17rem'}
+      right={'1rem'}
+      width={'4rem'}
+      zIndex={10}
+    >
       <svg className="progress-icon" viewBox="0 0 60 60">
         <motion.path
           fill="none"

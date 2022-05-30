@@ -3,12 +3,10 @@ import {
   Heading,
   Container,
   Text,
-  Button,
   Stack,
-  Icon,
-  useColorModeValue,
   createIcon,
   SimpleGrid,
+  useColorModeValue,
 } from '@chakra-ui/react';
 
 import ProjectCard from '../components/ProjectCard';
@@ -23,14 +21,16 @@ const projects = [
   },
   {
     title: 'Genova Industrial website',
-    description: 'Shopify website for Genova Industrial',
+    description:
+      'Shopify website for Genova Industrial, an electronics company',
     image: 'genova.png',
     liveLink: 'https://genovaindustrial.com/',
     githubLink: 'https://github.com/goncanegis',
   },
   {
     title: 'Harem London website',
-    description: 'Shopify website for Harem London',
+    description:
+      'Shopify website for Harem London, a high-end fashion brand in UK',
     image: 'harem-london.png',
     liveLink: 'https://www.haremlondon.com/',
     githubLink: 'https://github.com/goncanegis',
@@ -64,7 +64,7 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <>
-      <Container maxW={'7xl'}>
+      <Container maxW={'7xl'} as="section" id="projects">
         <Stack
           as={Box}
           textAlign={'center'}
@@ -81,7 +81,7 @@ export default function ProjectsSection() {
               I have built
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
+          <Text color={useColorModeValue('gray.500', 'gray.200')} fontSize="xl">
             My pride and joy - projects that I built with React, Next.js, Chakra
             UI, Shopify, RapidAPI, and lots of sweat and tears.
           </Text>

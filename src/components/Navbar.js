@@ -7,23 +7,21 @@ import {
   Stack,
   Collapse,
   Icon,
-  Link,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  useColorModeValue,
-  useBreakpointValue,
-  useDisclosure,
   Image,
+  Link,
+  useColorModeValue,
+  useDisclosure,
   Fade,
   transition,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import logo from '../assets/img/logo.svg';
 import { motion } from 'framer-motion';
 import { CustomButton } from './CustomButton';
+import { SocialButton } from './SocialButton';
 
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -106,6 +104,20 @@ export const Navbar = () => {
           direction={'row'}
           spacing={6}
         >
+          <Stack direction={'row'} spacing={6} align="center">
+            <SocialButton
+              label={'Github'}
+              href={'https://github.com/goncanegis'}
+            >
+              <FaGithub />
+            </SocialButton>{' '}
+            <SocialButton
+              label={'LinkedIn'}
+              href={'https://www.linkedin.com/in/goncanegis/'}
+            >
+              <FaLinkedin />
+            </SocialButton>
+          </Stack>
           <ColorModeSwitcher />
         </Stack>
       </Flex>

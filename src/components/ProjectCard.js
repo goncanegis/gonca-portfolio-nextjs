@@ -9,6 +9,7 @@ import {
   Icon,
   Link,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
 import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
@@ -48,13 +49,15 @@ export default function ProjectCard({
         </Box>
         <Stack>
           <Heading
-            color={useColorModeValue('gray.700', 'white')}
+            color={useColorModeValue('gray.700', 'gray.200')}
             fontSize={'2xl'}
             fontFamily={'body'}
           >
             {title}
           </Heading>
-          <Text color={'gray.500'}>{description}</Text>
+          <Text color={useColorModeValue('gray.600', 'gray.300')}>
+            {description}
+          </Text>
         </Stack>
         <Stack
           mt={6}
@@ -63,11 +66,34 @@ export default function ProjectCard({
           align={'center'}
           justify={'center'}
         >
-          <Link href={githubLink} isExternal mr={4}>
-            <Icon as={FaGithub} w={6} h={6} />
+          <Link
+            as={motion.a}
+            color={useColorModeValue('#805AD5', '#D6BCFA')}
+            href={githubLink}
+            isExternal
+            mr={5}
+            whileHover={{
+              scale: 1.05,
+              color: '#6B46C1',
+              transition: { duration: 0.3, ease: 'easeOut' },
+            }}
+          >
+            <Icon as={FaGithub} w={7} h={7} />
           </Link>
-          <Link href={liveLink} isExternal ml={4}>
-            <Icon as={FiExternalLink} w={6} h={6} />
+          <Link
+            as={motion.a}
+            color={useColorModeValue('#805AD5', '#D6BCFA')}
+            mr={5}
+            whileHover={{
+              scale: 1.05,
+              color: '#6B46C1',
+              transition: { duration: 0.3, ease: 'easeOut' },
+            }}
+            href={liveLink}
+            isExternal
+            ml={5}
+          >
+            <Icon as={FiExternalLink} w={7} h={7} />
           </Link>
         </Stack>
       </Box>
