@@ -88,7 +88,14 @@ export const AboutMeSection = () => {
 
   return (
     <>
-      <Container as="section" maxWidth="7xl" position="relative" id="about">
+      <Flex
+        as="section"
+        align="center"
+        justify="center"
+        position="relative"
+        id="about"
+        bg={useColorModeValue('blackAlpha.50', 'gray.600')}
+      >
         <Stack
           as={motion.div}
           initial="hidden"
@@ -96,6 +103,7 @@ export const AboutMeSection = () => {
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           py={{ base: 20, md: 36 }}
+          maxW="7xl"
         >
           <Heading
             mb={4}
@@ -106,7 +114,10 @@ export const AboutMeSection = () => {
             className="section-heading"
             display={'inline-block'}
           >
-            About Me
+            About{' '}
+            <Text as={'span'} color={useColorModeValue('teal.400', 'teal.200')}>
+              Me
+            </Text>
           </Heading>
 
           <Flex
@@ -145,7 +156,7 @@ export const AboutMeSection = () => {
             </Box>
 
             <Box
-              bg={bg}
+              bg={useColorModeValue('transparent', 'gray.100')}
               padding={4}
               align="center"
               justify="center"
@@ -262,12 +273,12 @@ export const AboutMeSection = () => {
           <Box
             as={motion.div}
             position="absolute"
-            left="-30px"
-            bottom="0"
+            left="3rem"
+            top="3rem"
             width="80px"
             height="100px"
             variants={mobileVariants}
-            bg={useColorModeValue('#AB91DF', '#AB91DF')}
+            bg={useColorModeValue('transparent', '#AB91DF')}
             borderRadius={6}
             display={{ base: 'none', sm: 'block' }}
           >
@@ -281,26 +292,51 @@ export const AboutMeSection = () => {
               fontSize={'2xl'}
               pt={10}
               pb={5}
-              fontWeight={'bold'}
+              fontWeight={500}
+              color={useColorModeValue('gray.700', 'gray.100')}
             >
-              Some tech I have been building with:
+              Tech stack I'm currently working with:
             </chakra.h2>
             <SimpleGrid
               columns={{ base: 4, xl: 8 }}
               spacing={{ base: 4, lg: 6 }}
             >
-              <StatsCard icon={<Icon as={IoLogoHtml5} w={8} h={8} />} />
-              <StatsCard icon={<Icon as={IoLogoCss3} w={8} h={8} />} />
-              <StatsCard icon={<Icon as={IoLogoJavascript} w={8} h={8} />} />
-              <StatsCard icon={<Icon as={SiReact} w={10} h={8} />} />
-              <StatsCard icon={<Icon as={SiNextdotjs} w={8} h={8} />} />
-              <StatsCard icon={<Icon as={SiChakraui} w={8} h={8} />} />
-              <StatsCard icon={<Icon as={SiShopify} w={8} h={8} />} />
-              <StatsCard icon={<Icon as={SiJquery} w={8} h={8} />} />
+              <StatsCard
+                icon={<Icon as={IoLogoHtml5} w={8} h={8} />}
+                label="HTML5"
+              />
+              <StatsCard
+                icon={<Icon as={IoLogoCss3} w={8} h={8} />}
+                label="CSS3"
+              />
+              <StatsCard
+                icon={<Icon as={IoLogoJavascript} w={8} h={8} />}
+                label="JavaScript"
+              />
+              <StatsCard
+                icon={<Icon as={SiReact} w={10} h={8} />}
+                label="ReactJS"
+              />
+              <StatsCard
+                icon={<Icon as={SiNextdotjs} w={8} h={8} />}
+                label="NextJS"
+              />
+              <StatsCard
+                icon={<Icon as={SiChakraui} w={8} h={8} />}
+                label="ChakraUI"
+              />
+              <StatsCard
+                icon={<Icon as={SiShopify} w={8} h={8} />}
+                label="Shopify"
+              />
+              <StatsCard
+                icon={<Icon as={SiJquery} w={8} h={8} />}
+                label="jQuery"
+              />
             </SimpleGrid>
           </Box>
         </Stack>
-      </Container>
+      </Flex>
     </>
   );
 };

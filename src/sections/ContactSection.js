@@ -124,7 +124,13 @@ export default function ContactSection() {
                 md: '5xl',
               }}
             >
-              Contact Me
+              Contact{' '}
+              <Text
+                as={'span'}
+                color={useColorModeValue('teal.400', 'teal.200')}
+              >
+                Me
+              </Text>
             </Heading>
 
             <Text fontSize="xl" textAlign="center">
