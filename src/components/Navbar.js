@@ -34,7 +34,7 @@ export const Navbar = () => {
       opacity: 1,
       y: 0,
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.1,
       },
     },
   };
