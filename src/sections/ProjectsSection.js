@@ -13,13 +13,6 @@ import ProjectCard from '../components/ProjectCard';
 
 const projects = [
   {
-    title: 'egegen website',
-    description: 'Digital marketing agency website for egegen',
-    image: 'egegen.png',
-    liveLink: 'https://ecommerce.egegen.com',
-    githubLink: 'https://github.com/goncanegis',
-  },
-  {
     title: 'Genova Industrial website',
     description:
       'Shopify website for Genova Industrial, an electronics company',
@@ -42,6 +35,15 @@ const projects = [
     image: 'spend-bill-gates-money.png',
     liveLink: 'https://spend-bill-gates-money-woad.vercel.app/',
     githubLink: 'https://github.com/goncanegis/spend-bill-gates-money',
+  },
+  {
+    title: 'Meals App',
+    description:
+      'A tasty app to browse meal recipes and view their Youtube cooking videos',
+    image: 'react-native-meals-app.png',
+    liveLink:
+      'https://www.linkedin.com/feed/update/urn:li:activity:6862453354338091008/',
+    githubLink: 'https://github.com/goncanegis/react-native-meal-app',
   },
   {
     title: 'Memory Cards',
