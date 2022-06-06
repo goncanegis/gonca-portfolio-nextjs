@@ -1,4 +1,4 @@
-import { chakra, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { chakra, VisuallyHidden } from '@chakra-ui/react';
 
 export const SocialButton = ({ children, label, href }) => {
   return (

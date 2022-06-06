@@ -5,19 +5,11 @@ import {
   useColorModeValue,
   VStack,
   Text,
-  Image,
 } from '@chakra-ui/react';
 
-import ContactForm from '../components/ContactForm';
-
+import ContactForm from './ContactForm';
+import { ChakraNextImage } from './ChakraNextImage';
 import { motion } from 'framer-motion';
-
-import hillsIcon from '../assets/img/hills-background/hills.svg';
-import sunIcon from '../assets/img/hills-background/circle.svg';
-import treesLeftIcon from '../assets/img/hills-background/trees-left.svg';
-import treesRightIcon from '../assets/img/hills-background/trees-right.svg';
-import treesFarIcon from '../assets/img/hills-background/trees-far.svg';
-import scooterWomanIcon from '../assets/img/hills-background/woman-scooter.svg';
 
 const contactSectionVariants = {
   hidden: {
@@ -145,9 +137,9 @@ export default function ContactSection() {
 
         {/* Animated background */}
 
-        <Image
+        <ChakraNextImage
           as={motion.img}
-          src={hillsIcon}
+          src={'/images/hills.svg'}
           variants={hillVariants}
           position="absolute"
           width="100%"
@@ -158,9 +150,9 @@ export default function ContactSection() {
           filter={useColorModeValue('none', 'brightness(40%)')}
         />
 
-        <Image
+        <ChakraNextImage
           as={motion.img}
-          src={sunIcon}
+          src={'/images/circle.svg'}
           variants={sunVariants}
           position="absolute"
           width="40%"
@@ -171,49 +163,49 @@ export default function ContactSection() {
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
-        <Image
+        <ChakraNextImage
           as={motion.img}
           position="absolute"
           left="2%"
           bottom="0%"
           width="17%"
           zIndex={2}
-          src={treesLeftIcon}
+          src={'/images/trees-left.svg'}
           variants={treeVariants}
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
-        <Image
+        <ChakraNextImage
           as={motion.img}
           position="absolute"
           right="2%"
           bottom="0%"
           width="17%"
           zIndex={2}
-          src={treesRightIcon}
+          src={'/images/trees-right.svg'}
           variants={treeVariants}
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
-        <Image
+        <ChakraNextImage
           as={motion.img}
           position="absolute"
           right="17%"
           top={{ md: '67%', lg: '58%', xl: '56%' }}
           width="8%"
           zIndex={1}
-          src={treesFarIcon}
+          src={'/images/trees-far.svg'}
           variants={treeVariants}
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
-        <Image
+        <ChakraNextImage
           as={motion.img}
           position="absolute"
           left="100%"
           bottom={'0%'}
           width="18%"
-          src={scooterWomanIcon}
+          src={'/images/woman-scooter.svg'}
           variants={scooterVariants}
           zIndex={3}
           style={{ originX: '50%', originY: '50%' }}

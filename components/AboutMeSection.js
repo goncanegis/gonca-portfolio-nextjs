@@ -2,9 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   Box,
-  Image,
   Flex,
-  Container,
   Heading,
   Text,
   useColorModeValue,
@@ -14,7 +12,7 @@ import {
   VisuallyHidden,
   Stack,
 } from '@chakra-ui/react';
-
+import { ChakraNextImage } from './ChakraNextImage';
 import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript } from 'react-icons/io';
 import {
   SiNextdotjs,
@@ -23,8 +21,6 @@ import {
   SiShopify,
   SiJquery,
 } from 'react-icons/si';
-
-import mobileIcon from '../assets/img/mobile-ui-1.svg';
 
 function StatsCard(props) {
   const { icon } = props;
@@ -282,7 +278,11 @@ export const AboutMeSection = () => {
             borderRadius={6}
             display={{ base: 'none', sm: 'block' }}
           >
-            <Image src={mobileIcon} height={'100px'} width={'80px'} />
+            <ChakraNextImage
+              src={'/images/mobile-ui-1.svg'}
+              height={'100px'}
+              width={'80px'}
+            />
           </Box>
 
           {/* Statistics */}

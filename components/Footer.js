@@ -1,17 +1,13 @@
 import {
   Box,
-  chakra,
   Container,
-  Image,
   Icon,
   Stack,
   Text,
   useColorModeValue,
-  VisuallyHidden,
 } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import logo from '../assets/img/logo.svg';
-
+import { ChakraNextImage } from '../components/ChakraNextImage';
 import { SocialButton } from './SocialButton';
 
 export default function Footer() {
@@ -29,7 +25,12 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Image src={logo} alt="logo" w={10} h={10} />
+        <ChakraNextImage
+          src={'/images/logo.svg'}
+          alt="logo"
+          width={30}
+          height={30}
+        />
         <Text>© 2022 Gonca Negis. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Github'} href={'https://github.com/goncanegis'}>

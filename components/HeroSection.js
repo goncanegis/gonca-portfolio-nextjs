@@ -1,18 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-  Image,
   Flex,
   Container,
-  Heading,
   Stack,
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
 
-import { codingIcons } from '../assets/img';
-
-import { CustomButton } from '../components/CustomButton';
+import { ChakraNextImage } from './ChakraNextImage';
+import { CustomButton } from './CustomButton';
 
 export const HeroSection = () => {
   const heroImageVariants = {
@@ -140,9 +137,9 @@ export const HeroSection = () => {
           bg={useColorModeValue('transparent', 'gray.500')}
           borderRadius={8}
         >
-          <Image
+          <ChakraNextImage
             as={motion.img}
-            src={codingIcons.scene}
+            src={'/images/scene.svg'}
             initial="hidden"
             animate={'show'}
             variants={heroImageChildrenVariants}
@@ -152,71 +149,71 @@ export const HeroSection = () => {
             w={'80%'}
             zIndex={1}
           />
-          <Image
+          <ChakraNextImage
             as={motion.img}
-            src={codingIcons.woman}
+            src={'/images/woman.svg'}
             variants={womanImageVariants}
             position="absolute"
             w={'38%'}
             left={'37%'}
           />
-          <Image
+          <ChakraNextImage
             as={motion.img}
             variants={lampImageVariants}
-            src={codingIcons.lamp}
+            src={'/images/lamp.svg'}
             position="absolute"
             w={'10%'}
             left={'15%'}
           />
-          <Image
+          <ChakraNextImage
             as={motion.img}
             variants={plantImageVariants}
-            src={codingIcons.plant}
+            src={'/images/plant.svg'}
             position="absolute"
             w={'13%'}
             bottom={'2%'}
           />
 
-          <Image
+          <ChakraNextImage
             as={motion.img}
             variants={heroImageChildrenVariants}
-            src={codingIcons.graphics1}
+            src={'/images/graphics1.svg'}
             position="absolute"
             w={'5%'}
             top={{ base: '30%', md: '25%' }}
             left={'62%'}
           />
-          <Image
+          <ChakraNextImage
             as={motion.img}
             variants={heroImageChildrenVariants}
-            src={codingIcons.graphics2}
+            src={'/images/graphics2.svg'}
             position="absolute"
             w={'5%'}
             top={'25%'}
             left={'72%'}
           />
-          <Image
+          <ChakraNextImage
             as={motion.img}
             variants={heroImageChildrenVariants}
-            src={codingIcons.graphics3}
+            src={'/images/graphics3.svg'}
             position="absolute"
             w={'5%'}
             top={'35%'}
             left={'75%'}
           />
-          <Image
+          <ChakraNextImage
             as={motion.img}
             variants={heroImageChildrenVariants}
-            src={codingIcons.graphics4}
+            src={'/images/graphics4.svg'}
             position="absolute"
             w={'5%'}
             top={{ base: '42%', md: '35%' }}
             left={'84%'}
           />
-          <Image
+          <ChakraNextImage
             as={motion.img}
             variants={bookImageVariants}
-            src={codingIcons.book}
+            src={'/images/book.svg'}
             position="absolute"
             w={'2%'}
             top={'3.5%'}

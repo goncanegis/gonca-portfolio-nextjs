@@ -1,24 +1,20 @@
+import NextLink from 'next/link';
 import {
   Box,
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
-  Collapse,
   Icon,
-  Image,
   Link,
   useColorModeValue,
   useDisclosure,
-  Fade,
-  transition,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import logo from '../assets/img/logo.svg';
+import { ChakraNextImage } from './ChakraNextImage';
 import { motion } from 'framer-motion';
 import { CustomButton } from './CustomButton';
 import { SocialButton } from './SocialButton';
@@ -26,7 +22,6 @@ import { SocialButton } from './SocialButton';
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
   const mobileNavLinkBgColor = useColorModeValue('gray.600', 'gray.800');
-  const mobileNavLinkColor = useColorModeValue('gray.600', 'gray.200');
 
   const mobileMenuVariants = {
     hidden: { opacity: 0, y: -10 },
@@ -75,9 +70,16 @@ export const Navbar = () => {
           justify={{ base: 'center', md: 'start' }}
           align={'center'}
         >
-          <Link href="/">
-            <Image src={logo} w={'50px'} h={'50px'} alt="logo" />
-          </Link>
+          <NextLink href="/">
+            <Link>
+              <ChakraNextImage
+                src={'/images/logo.svg'}
+                width={'50px'}
+                height={'50px'}
+                alt="logo"
+              />
+            </Link>
+          </NextLink>
 
           <Flex
             display={{ base: 'none', md: 'flex' }}

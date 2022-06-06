@@ -5,11 +5,11 @@ import {
   Heading,
   Text,
   Stack,
-  Image,
   Icon,
   Link,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import { ChakraNextImage } from './ChakraNextImage';
 
 import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
@@ -40,11 +40,12 @@ export default function ProjectCard({
           mb={6}
           pos={'relative'}
         >
-          <Image
-            src={require(`../assets/img/projects/${image}`)}
-            w={'full'}
-            h={'full'}
-            objectFit="cover"
+          <ChakraNextImage
+            src={`/images/${image}`}
+            alt={title}
+            width={400}
+            height={210}
+            objectFit={'cover'}
           />
         </Box>
         <Stack>

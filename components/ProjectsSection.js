@@ -9,7 +9,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from './ProjectCard';
 
 const projects = [
   {
