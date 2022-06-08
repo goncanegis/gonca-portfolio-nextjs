@@ -151,7 +151,7 @@ export default function ContactSection() {
           filter={useColorModeValue('none', 'brightness(40%)')}
         />
 
-        <ChakraNextImage
+        <Image
           as={motion.img}
           src={'/images/circle.svg'}
           variants={sunVariants}
