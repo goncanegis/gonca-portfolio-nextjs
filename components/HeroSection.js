@@ -5,6 +5,7 @@ import {
   Container,
   Stack,
   Text,
+  Image,
   useColorModeValue,
 } from '@chakra-ui/react';
 
@@ -137,7 +138,7 @@ export const HeroSection = () => {
           bg={useColorModeValue('transparent', 'gray.500')}
           borderRadius={8}
         >
-          <ChakraNextImage
+          <Image
             as={motion.img}
             src={'/images/scene.svg'}
             initial="hidden"
@@ -149,7 +150,7 @@ export const HeroSection = () => {
             w={'80%'}
             zIndex={1}
           />
-          <ChakraNextImage
+          <Image
             as={motion.img}
             src={'/images/woman.svg'}
             variants={womanImageVariants}
@@ -157,7 +158,7 @@ export const HeroSection = () => {
             w={'38%'}
             left={'37%'}
           />
-          <ChakraNextImage
+          <Image
             as={motion.img}
             variants={lampImageVariants}
             src={'/images/lamp.svg'}
@@ -165,7 +166,7 @@ export const HeroSection = () => {
             w={'10%'}
             left={'15%'}
           />
-          <ChakraNextImage
+          <Image
             as={motion.img}
             variants={plantImageVariants}
             src={'/images/plant.svg'}
@@ -174,7 +175,7 @@ export const HeroSection = () => {
             bottom={'2%'}
           />
 
-          <ChakraNextImage
+          <Image
             as={motion.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics1.svg'}
@@ -183,7 +184,7 @@ export const HeroSection = () => {
             top={{ base: '30%', md: '25%' }}
             left={'62%'}
           />
-          <ChakraNextImage
+          <Image
             as={motion.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics2.svg'}
@@ -192,7 +193,7 @@ export const HeroSection = () => {
             top={'25%'}
             left={'72%'}
           />
-          <ChakraNextImage
+          <Image
             as={motion.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics3.svg'}
@@ -201,7 +202,7 @@ export const HeroSection = () => {
             top={'35%'}
             left={'75%'}
           />
-          <ChakraNextImage
+          <Image
             as={motion.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics4.svg'}
@@ -210,7 +211,7 @@ export const HeroSection = () => {
             top={{ base: '42%', md: '35%' }}
             left={'84%'}
           />
-          <ChakraNextImage
+          <Image
             as={motion.img}
             variants={bookImageVariants}
             src={'/images/book.svg'}

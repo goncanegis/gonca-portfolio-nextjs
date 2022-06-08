@@ -5,6 +5,7 @@ import {
   useColorModeValue,
   VStack,
   Text,
+  Image,
 } from '@chakra-ui/react';
 
 import ContactForm from './ContactForm';
@@ -137,7 +138,7 @@ export default function ContactSection() {
 
         {/* Animated background */}
 
-        <ChakraNextImage
+        <Image
           as={motion.img}
           src={'/images/hills.svg'}
           variants={hillVariants}
@@ -163,7 +164,7 @@ export default function ContactSection() {
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
-        <ChakraNextImage
+        <Image
           as={motion.img}
           position="absolute"
           left="2%"
@@ -175,7 +176,7 @@ export default function ContactSection() {
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
-        <ChakraNextImage
+        <Image
           as={motion.img}
           position="absolute"
           right="2%"
@@ -187,7 +188,7 @@ export default function ContactSection() {
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
-        <ChakraNextImage
+        <Image
           as={motion.img}
           position="absolute"
           right="17%"
@@ -199,7 +200,7 @@ export default function ContactSection() {
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
 
-        <ChakraNextImage
+        <Image
           as={motion.img}
           position="absolute"
           left="100%"
