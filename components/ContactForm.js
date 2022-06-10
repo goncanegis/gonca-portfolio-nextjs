@@ -11,10 +11,12 @@ import {
   Textarea,
   useColorModeValue,
   VStack,
-  useToast,
 } from '@chakra-ui/react';
+import { CheckIcon } from '@chakra-ui/icons';
+import { useState, useEffect } from 'react';
 
-import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { useForm, ValidationError } from '@formspree/react';
 
@@ -23,11 +25,31 @@ import { MdEmail } from 'react-icons/md';
 import { BsFillPersonFill } from 'react-icons/bs';
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm('xgerbnbk');
+  const [state, handleSubmit, reset] = useForm(
+    process.env.NEXT_PUBLIC_CONTACT_FORM_ID
+  );
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const toast = useToast();
+
+  useEffect(() => {
+    if (state.succeeded && !state.submitting) {
+      toast('Thank you for contacting me, I will get back to you shortly!', {
+        icon: '🥰',
+        position: 'bottom-right',
+      });
+      setTimeout(() => {
+        setName('');
+        setEmail('');
+        setMessage('');
+        reset();
+      }, 2000);
+    }
+
+    if (state.errors.length > 0) {
+      toast.error('Oops, something went wrong!');
+    }
+  }, [state]);
 
   const handleNameChange = e => {
     setName(e.target.value);
@@ -39,38 +61,6 @@ export default function ContactForm() {
 
   const handleMessageChange = e => {
     setMessage(e.target.value);
-  };
-
-  const handleContactFormSubmit = async e => {
-    e.preventDefault();
-
-    try {
-      await handleSubmit({
-        name,
-        email,
-        message,
-      });
-      setName('');
-      setEmail('');
-      setMessage('');
-      toast({
-        title: 'Message sent!',
-        description: 'I will get back to you as soon as possible.',
-        status: 'success',
-        duration: 3000,
-        isClosable: true,
-      });
-    } catch (error) {
-      console.error(error);
-      toast({
-        title: 'Error',
-        description:
-          'There was an error sending your message. Please try again.',
-        status: 'error',
-        duration: 3000,
-        isClosable: true,
-      });
-    }
   };
 
   return (
@@ -122,7 +112,7 @@ export default function ContactForm() {
         shadow="base"
       >
         <VStack spacing={5}>
-          <VStack as="form" onSubmit={handleContactFormSubmit}>
+          <VStack as="form" onSubmit={handleSubmit}>
             <label htmlFor="fullName">Full Name</label>
             <InputGroup>
               <InputLeftElement children={<Icon as={BsFillPersonFill} />} />
@@ -174,12 +164,14 @@ export default function ContactForm() {
               colorScheme={'purple'}
               type="submit"
               disabled={state.submitting}
+              isLoading={state.submitting}
             >
-              Submit
+              {state.succeeded ? <CheckIcon /> : 'Submit'}
             </Button>
           </VStack>
         </VStack>
       </Box>
+      <ToastContainer autoClose={2000} />
     </Stack>
   );
 }

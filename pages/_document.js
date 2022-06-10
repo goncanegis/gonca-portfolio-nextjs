@@ -31,7 +31,6 @@ export default function Document() {
           content="Personal portfolio of Gonca Negis, a front-end developer based in Izmir, Turkey."
         />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-        <title>Gonca Negis</title>
       </Head>
       <body>
         <ColorModeScript />

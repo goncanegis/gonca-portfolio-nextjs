@@ -49,7 +49,7 @@ const projects = [
     title: 'Memory Cards',
     description:
       'A little game where you have to remember the cards in the right order',
-    image: 'memory-cards.png',
+    image: 'magic-cards.png',
     liveLink: 'https://react-memory-game-sable.vercel.app/',
     githubLink: 'https://github.com/goncanegis/react-memory-game',
   },
