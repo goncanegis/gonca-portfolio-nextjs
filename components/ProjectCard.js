@@ -72,6 +72,7 @@ export default function ProjectCard({
             color={useColorModeValue('#805AD5', '#D6BCFA')}
             href={githubLink}
             isExternal
+            title="View Github repo"
             mr={5}
             whileHover={{
               scale: 1.05,
@@ -85,6 +86,7 @@ export default function ProjectCard({
             as={motion.a}
             color={useColorModeValue('#805AD5', '#D6BCFA')}
             mr={5}
+            title="Visit live site"
             whileHover={{
               scale: 1.05,
               color: '#6B46C1',

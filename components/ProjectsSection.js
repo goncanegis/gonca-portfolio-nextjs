@@ -87,11 +87,11 @@ export default function ProjectsSection() {
             lineHeight={'110%'}
           >
             Some projects <br />
-            <Text as={'span'} color={useColorModeValue('teal.400', 'teal.200')}>
+            <Text as={'span'} color={useColorModeValue('teal.500', 'teal.200')}>
               I have built
             </Text>
           </Heading>
-          <Text color={useColorModeValue('gray.500', 'gray.200')} fontSize="xl">
+          <Text color={useColorModeValue('gray.700', 'gray.200')} fontSize="xl">
             My pride and joy - projects that I built with React, Next.js, Chakra
             UI, Shopify, RapidAPI, and lots of sweat and tears.
           </Text>

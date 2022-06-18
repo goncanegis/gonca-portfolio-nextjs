@@ -134,7 +134,7 @@ export const HeroSection = () => {
           variants={heroImageVariants}
           position="relative"
           overflow={'hidden'}
-          bg={useColorModeValue('transparent', 'gray.500')}
+          bg={useColorModeValue('transparent', 'gray.700')}
           borderRadius={8}
         >
           <Image

@@ -111,9 +111,11 @@ export default function ContactForm() {
         color={useColorModeValue('gray.700', 'whiteAlpha.900')}
         shadow="base"
       >
-        <VStack spacing={5}>
-          <VStack as="form" onSubmit={handleSubmit}>
-            <label htmlFor="fullName">Full Name</label>
+        <VStack spacing={8}>
+          <VStack as="form" spacing={4} onSubmit={handleSubmit}>
+            <label htmlFor="fullName" style={{ color: 'black' }}>
+              Full Name
+            </label>
             <InputGroup>
               <InputLeftElement children={<Icon as={BsFillPersonFill} />} />
               <Input
@@ -130,7 +132,9 @@ export default function ContactForm() {
               field="email"
               errors={state.errors}
             />
-            <label htmlFor="email">Email Address</label>
+            <label htmlFor="email" style={{ color: 'black' }}>
+              Email Address
+            </label>
             <InputGroup>
               <InputLeftElement children={<Icon as={MdEmail} />} />
               <Input
@@ -146,7 +150,9 @@ export default function ContactForm() {
               field="email"
               errors={state.errors}
             />
-            <label htmlFor="message">Your message</label>
+            <label htmlFor="message" style={{ color: 'black' }}>
+              Your message
+            </label>
 
             <Textarea
               id="message"

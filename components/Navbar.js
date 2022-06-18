@@ -74,8 +74,8 @@ export const Navbar = () => {
             <Link>
               <ChakraNextImage
                 src={'/images/logo.svg'}
-                width={'50px'}
-                height={'50px'}
+                width={50}
+                height={50}
                 alt="logo"
               />
             </Link>

@@ -31,7 +31,7 @@ function StatsCard(props) {
       py={'2'}
       shadow={'lg'}
       borderWidth={1}
-      borderColor={useColorModeValue('gray.400', 'gray.500')}
+      borderColor={useColorModeValue('gray.400', 'gray.700')}
       color={useColorModeValue('gray.700', 'gray.100')}
       rounded={'lg'}
       transition="all 0.2s"
@@ -110,7 +110,7 @@ export const AboutMeSection = () => {
             display={'inline-block'}
           >
             About{' '}
-            <Text as={'span'} color={useColorModeValue('teal.400', 'teal.200')}>
+            <Text as={'span'} color={useColorModeValue('teal.500', 'teal.200')}>
               Me
             </Text>
           </Heading>
@@ -278,6 +278,7 @@ export const AboutMeSection = () => {
           >
             <ChakraNextImage
               src={'/images/mobile-ui-1.svg'}
+              alt="mobile ui"
               height={100}
               width={80}
             />

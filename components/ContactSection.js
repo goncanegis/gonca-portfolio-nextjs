@@ -9,7 +9,6 @@ import {
 } from '@chakra-ui/react';
 
 import ContactForm from './ContactForm';
-import { ChakraNextImage } from './ChakraNextImage';
 import { motion } from 'framer-motion';
 
 const contactSectionVariants = {
@@ -120,7 +119,7 @@ export default function ContactSection() {
               Contact{' '}
               <Text
                 as={'span'}
-                color={useColorModeValue('teal.400', 'teal.200')}
+                color={useColorModeValue('teal.500', 'teal.200')}
               >
                 Me
               </Text>
@@ -141,6 +140,7 @@ export default function ContactSection() {
         <Image
           as={motion.img}
           src={'/images/hills.svg'}
+          alt="hills"
           variants={hillVariants}
           position="absolute"
           width="100%"
@@ -154,6 +154,7 @@ export default function ContactSection() {
         <Image
           as={motion.img}
           src={'/images/circle.svg'}
+          alt="sun"
           variants={sunVariants}
           position="absolute"
           width="40%"
@@ -172,6 +173,7 @@ export default function ContactSection() {
           width="17%"
           zIndex={2}
           src={'/images/trees-left.svg'}
+          alt="trees"
           variants={treeVariants}
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
@@ -184,6 +186,7 @@ export default function ContactSection() {
           width="17%"
           zIndex={2}
           src={'/images/trees-right.svg'}
+          alt="trees"
           variants={treeVariants}
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
@@ -196,6 +199,7 @@ export default function ContactSection() {
           width="8%"
           zIndex={1}
           src={'/images/trees-far.svg'}
+          alt="trees"
           variants={treeVariants}
           filter={useColorModeValue('none', 'brightness(80%)')}
         />
@@ -207,6 +211,7 @@ export default function ContactSection() {
           bottom={'0%'}
           width="18%"
           src={'/images/woman-scooter.svg'}
+          alt="woman on scooter"
           variants={scooterVariants}
           zIndex={3}
           style={{ originX: '50%', originY: '50%' }}
