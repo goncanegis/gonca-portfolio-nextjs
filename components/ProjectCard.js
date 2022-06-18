@@ -45,6 +45,7 @@ export default function ProjectCard({
             alt={title}
             layout="fill"
             objectFit={'cover'}
+            priority
           />
         </Box>
         <Stack>

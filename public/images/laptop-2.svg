@@ -22,7 +22,7 @@
     fill="#AB91DF" />
   <path d="M837.5 477H89.5V519H837.5V477Z" stroke="black" strokeWidth="2" strokeMiterlimit="10" />
   <path d="M371 20H39V235H371V20Z" fill="#78E5E1" />
-  <path opacity="0.68" d="M855 374H455V422H855V374Z" fill="#F8DA96" />
+  <path d="M855 374H455V422H855V374Z" fill="#F8DA96" />
   <path d="M484.42 352H455V304H547.09" stroke="black" strokeWidth="2" strokeMiterlimit="10" />
   <path d="M855 304V352H747.15" stroke="black" strokeWidth="2" strokeMiterlimit="10" />
   <path d="M547.09 304H739.92" stroke="black" strokeWidth="2" strokeMiterlimit="10" />

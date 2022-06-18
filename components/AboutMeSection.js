@@ -9,7 +9,6 @@ import {
   chakra,
   SimpleGrid,
   Icon,
-  VisuallyHidden,
   Stack,
 } from '@chakra-ui/react';
 import { ChakraNextImage } from './ChakraNextImage';
@@ -222,7 +221,6 @@ export const AboutMeSection = () => {
                 />
                 <motion.path
                   variants={draw}
-                  opacity="0.68"
                   d="M855 374H455V422H855V374Z"
                   fill="#F8DA96"
                 />

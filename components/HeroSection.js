@@ -9,7 +9,6 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
-import { ChakraNextImage } from './ChakraNextImage';
 import { CustomButton } from './CustomButton';
 
 export const HeroSection = () => {
@@ -141,6 +140,7 @@ export const HeroSection = () => {
           <Image
             as={motion.img}
             src={'/images/scene.svg'}
+            alt={'hero image scene'}
             initial="hidden"
             animate={'show'}
             variants={heroImageChildrenVariants}
@@ -153,6 +153,7 @@ export const HeroSection = () => {
           <Image
             as={motion.img}
             src={'/images/woman.svg'}
+            alt="woman"
             variants={womanImageVariants}
             position="absolute"
             w={'38%'}
@@ -162,6 +163,7 @@ export const HeroSection = () => {
             as={motion.img}
             variants={lampImageVariants}
             src={'/images/lamp.svg'}
+            alt="lamp"
             position="absolute"
             w={'10%'}
             left={'15%'}
@@ -170,6 +172,7 @@ export const HeroSection = () => {
             as={motion.img}
             variants={plantImageVariants}
             src={'/images/plant.svg'}
+            alt="plant"
             position="absolute"
             w={'13%'}
             bottom={'2%'}
@@ -179,6 +182,7 @@ export const HeroSection = () => {
             as={motion.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics1.svg'}
+            alt="graphics"
             position="absolute"
             w={'5%'}
             top={{ base: '30%', md: '25%' }}
@@ -188,6 +192,7 @@ export const HeroSection = () => {
             as={motion.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics2.svg'}
+            alt="graphics"
             position="absolute"
             w={'5%'}
             top={'25%'}
@@ -197,6 +202,7 @@ export const HeroSection = () => {
             as={motion.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics3.svg'}
+            alt="graphics"
             position="absolute"
             w={'5%'}
             top={'35%'}
@@ -206,6 +212,7 @@ export const HeroSection = () => {
             as={motion.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics4.svg'}
+            alt="graphics"
             position="absolute"
             w={'5%'}
             top={{ base: '42%', md: '35%' }}
@@ -215,6 +222,7 @@ export const HeroSection = () => {
             as={motion.img}
             variants={bookImageVariants}
             src={'/images/book.svg'}
+            alt="book"
             position="absolute"
             w={'2%'}
             top={'3.5%'}
