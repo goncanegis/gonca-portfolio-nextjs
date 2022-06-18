@@ -71,14 +71,14 @@ export const Navbar = () => {
           align={'center'}
         >
           <NextLink href="/">
-            <Link>
+            <a>
               <ChakraNextImage
                 src={'/images/logo.svg'}
                 width={50}
                 height={50}
                 alt="logo"
               />
-            </Link>
+            </a>
           </NextLink>
 
           <Flex
