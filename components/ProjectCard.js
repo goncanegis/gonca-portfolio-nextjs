@@ -43,8 +43,7 @@ export default function ProjectCard({
           <ChakraNextImage
             src={`/images/${image}`}
             alt={title}
-            width={400}
-            height={210}
+            layout="fill"
             objectFit={'cover'}
           />
         </Box>

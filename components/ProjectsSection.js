@@ -13,10 +13,18 @@ import ProjectCard from './ProjectCard';
 
 const projects = [
   {
+    title: 'Marketing agency website',
+    description:
+      'A multi-page, responsive marketing agency website built with NextJS',
+    image: 'marketing-agency.webp',
+    liveLink: 'https://marketing-agency-website-gonca.vercel.app/',
+    githubLink: 'https://github.com/goncanegis',
+  },
+  {
     title: 'Genova Industrial website',
     description:
       'Shopify website for Genova Industrial, an electronics company',
-    image: 'genova.png',
+    image: 'genova.webp',
     liveLink: 'https://genovaindustrial.com/',
     githubLink: 'https://github.com/goncanegis',
   },
@@ -24,7 +32,7 @@ const projects = [
     title: 'Harem London website',
     description:
       'Shopify website for Harem London, a high-end fashion brand in UK',
-    image: 'harem-london.png',
+    image: 'harem-london.webp',
     liveLink: 'https://www.haremlondon.com/',
     githubLink: 'https://github.com/goncanegis',
   },
@@ -32,7 +40,7 @@ const projects = [
     title: "Spend Bill Gates' Money",
     description:
       'A fun app where users can spend a huge amount of imaginary money',
-    image: 'spend-bill-gates-money.png',
+    image: 'spend-bill-gates-money.webp',
     liveLink: 'https://spend-bill-gates-money-woad.vercel.app/',
     githubLink: 'https://github.com/goncanegis/spend-bill-gates-money',
   },
@@ -40,7 +48,7 @@ const projects = [
     title: 'Meals App',
     description:
       'A tasty app to browse meal recipes and view their Youtube cooking videos',
-    image: 'react-native-meals-app.png',
+    image: 'meal-app.webp',
     liveLink:
       'https://www.linkedin.com/feed/update/urn:li:activity:6862453354338091008/',
     githubLink: 'https://github.com/goncanegis/react-native-meal-app',
@@ -49,7 +57,7 @@ const projects = [
     title: 'Memory Cards',
     description:
       'A little game where you have to remember the cards in the right order',
-    image: 'magic-cards.png',
+    image: 'magic-cards.webp',
     liveLink: 'https://react-memory-game-sable.vercel.app/',
     githubLink: 'https://github.com/goncanegis/react-memory-game',
   },
@@ -57,7 +65,7 @@ const projects = [
     title: 'Weather App',
     description:
       'A simple app where users can view weather conditions in their current location',
-    image: 'weather-app.png',
+    image: 'weather-app.webp',
     liveLink: 'https://celeis-react-weather-app.netlify.app/',
     githubLink: 'https://github.com/goncanegis/react-weather-app',
   },
