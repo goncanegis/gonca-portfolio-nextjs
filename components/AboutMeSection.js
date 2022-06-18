@@ -145,8 +145,8 @@ export const AboutMeSection = () => {
                 textAlign={{ base: 'center', lg: 'start' }}
                 width={{ base: '65%', lg: '100%' }}
               >
-                I am a self-taught front-end developer with an eye for design,
-                and a background of content writing.
+                I am a front-end developer based in Izmir, Turkey, with an eye
+                for design, and a background of content writing.
               </Text>
             </Box>
 
@@ -278,8 +278,8 @@ export const AboutMeSection = () => {
           >
             <ChakraNextImage
               src={'/images/mobile-ui-1.svg'}
-              height={'100px'}
-              width={'80px'}
+              height={100}
+              width={80}
             />
           </Box>
 
