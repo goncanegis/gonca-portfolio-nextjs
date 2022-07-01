@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Personal Portfolio Website of Gonca Negis, a front-end developer based in Izmir, Turkey.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Built with NextJS, Chakra UI, and Framer Motion.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs required dependencies.
 
 ### `npm start`
 
