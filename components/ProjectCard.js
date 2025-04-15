@@ -43,8 +43,9 @@ export default function ProjectCard({
           <ChakraNextImage
             src={`/images/${image}`}
             alt={title}
-            layout="fill"
-            objectFit={'cover'}
+            fill
+            sizes="(max-width: 768px) 100vw, 445px"
+            style={{ objectFit: 'cover' }}
             priority
           />
         </Box>
