@@ -25,9 +25,8 @@ import { MdEmail } from 'react-icons/md';
 import { BsFillPersonFill } from 'react-icons/bs';
 
 export default function ContactForm() {
-  const [state, handleSubmit, reset] = useForm(
-    process.env.NEXT_PUBLIC_CONTACT_FORM_ID
-  );
+  const formId = process.env.NEXT_PUBLIC_CONTACT_FORM_ID || 'xnqyegqz';
+  const [state, handleSubmit, reset] = useForm(formId);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');

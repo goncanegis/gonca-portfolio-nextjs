@@ -67,37 +67,47 @@ export default function ProjectCard({
           align={'center'}
           justify={'center'}
         >
-          <Link
-            as={motion.a}
-            color={useColorModeValue('#805AD5', '#D6BCFA')}
-            href={githubLink}
-            isExternal
-            title="View Github repo"
-            mr={5}
+          <motion.div
             whileHover={{
               scale: 1.05,
-              color: '#6B46C1',
               transition: { duration: 0.3, ease: 'easeOut' },
             }}
           >
-            <Icon as={FaGithub} w={7} h={7} />
-          </Link>
-          <Link
-            as={motion.a}
-            color={useColorModeValue('#805AD5', '#D6BCFA')}
-            mr={5}
-            title="Visit live site"
+            <Link
+              href={githubLink}
+              isExternal
+              display="inline-flex"
+              title="View Github repo"
+              mr={5}
+              color={useColorModeValue('#805AD5', '#D6BCFA')}
+              _hover={{
+                color: '#6B46C1',
+              }}
+            >
+              <Icon as={FaGithub} w={7} h={7} />
+            </Link>
+          </motion.div>
+          <motion.div
             whileHover={{
               scale: 1.05,
-              color: '#6B46C1',
               transition: { duration: 0.3, ease: 'easeOut' },
             }}
-            href={liveLink}
-            isExternal
-            ml={5}
           >
-            <Icon as={FiExternalLink} w={7} h={7} />
-          </Link>
+            <Link
+              href={liveLink}
+              isExternal
+              display="inline-flex"
+              title="Visit live site"
+              mr={5}
+              ml={5}
+              color={useColorModeValue('#805AD5', '#D6BCFA')}
+              _hover={{
+                color: '#6B46C1',
+              }}
+            >
+              <Icon as={FiExternalLink} w={7} h={7} />
+            </Link>
+          </motion.div>
         </Stack>
       </Box>
     </Center>
