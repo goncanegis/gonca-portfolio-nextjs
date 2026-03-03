@@ -1,5 +1,5 @@
 import { Box, Link, useColorModeValue } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export const CustomButton = ({ href, label }) => {
   const linkColor = useColorModeValue('gray.600', 'gray.200');
@@ -12,7 +12,7 @@ export const CustomButton = ({ href, label }) => {
 
   return (
     <Box
-      as={motion.div}
+      as={m.div}
       p={2}
       backgroundColor={linkBackgroundColor}
       whileHover={{ y: 2, x: 2 }}

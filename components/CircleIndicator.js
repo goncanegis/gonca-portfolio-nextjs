@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import {
-  motion,
+  m,
   useScroll,
   useSpring,
   useTransform,
@@ -27,7 +27,7 @@ export const CircleIndicator = () => {
       zIndex={10}
     >
       <svg className="progress-icon" viewBox="0 0 60 60">
-        <motion.path
+        <m.path
           fill="none"
           strokeWidth="5"
           stroke={'#AA8CE4'}
@@ -41,7 +41,7 @@ export const CircleIndicator = () => {
             scaleX: -1, // Reverse direction of line animation
           }}
         />
-        <motion.path
+        <m.path
           fill="none"
           strokeWidth="5"
           stroke={'#AA8CE4'}

@@ -8,7 +8,7 @@ import {
   Icon,
   Link,
 } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { ChakraNextImage } from './ChakraNextImage';
 
 import { FaGithub } from 'react-icons/fa';
@@ -72,7 +72,7 @@ export default function ProjectCard({
           align={'center'}
           justify={'center'}
         >
-          <motion.div
+          <m.div
             whileHover={{
               scale: 1.05,
               transition: { duration: 0.3, ease: 'easeOut' },
@@ -91,8 +91,8 @@ export default function ProjectCard({
             >
               <Icon as={FaGithub} w={7} h={7} />
             </Link>
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
             whileHover={{
               scale: 1.05,
               transition: { duration: 0.3, ease: 'easeOut' },
@@ -112,7 +112,7 @@ export default function ProjectCard({
             >
               <Icon as={FiExternalLink} w={7} h={7} />
             </Link>
-          </motion.div>
+          </m.div>
         </Stack>
       </Box>
     </Center>

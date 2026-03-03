@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   Flex,
   Container,
@@ -99,7 +99,7 @@ export const HeroSection = () => {
             Hi there!
           </Text>
           <Text
-            as={motion.h1}
+            as={m.h1}
             style={{
               display: 'inline-flex',
               marginLeft: '0.5em',
@@ -132,7 +132,7 @@ export const HeroSection = () => {
           pt={8}
           pb={2}
           px={6}
-          as={motion.div}
+          as={m.div}
           initial={'hidden'}
           animate={'show'}
           variants={heroImageVariants}
@@ -142,7 +142,7 @@ export const HeroSection = () => {
           borderRadius={8}
         >
           <Image
-            as={motion.img}
+            as={m.img}
             src={'/images/scene.svg'}
             alt={'hero image scene'}
             initial="hidden"
@@ -156,7 +156,7 @@ export const HeroSection = () => {
             fetchPriority="high"
           />
           <Image
-            as={motion.img}
+            as={m.img}
             src={'/images/woman.svg'}
             alt="woman"
             variants={womanImageVariants}
@@ -166,7 +166,7 @@ export const HeroSection = () => {
             fetchPriority="high"
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={lampImageVariants}
             src={'/images/lamp.svg'}
             alt="lamp"
@@ -175,7 +175,7 @@ export const HeroSection = () => {
             left={'15%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={plantImageVariants}
             src={'/images/plant.svg'}
             alt="plant"
@@ -185,7 +185,7 @@ export const HeroSection = () => {
           />
 
           <Image
-            as={motion.img}
+            as={m.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics1.svg'}
             alt="graphics"
@@ -195,7 +195,7 @@ export const HeroSection = () => {
             left={'62%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics2.svg'}
             alt="graphics"
@@ -205,7 +205,7 @@ export const HeroSection = () => {
             left={'72%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics3.svg'}
             alt="graphics"
@@ -215,7 +215,7 @@ export const HeroSection = () => {
             left={'75%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics4.svg'}
             alt="graphics"
@@ -225,7 +225,7 @@ export const HeroSection = () => {
             left={'84%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={bookImageVariants}
             src={'/images/book.svg'}
             alt="book"

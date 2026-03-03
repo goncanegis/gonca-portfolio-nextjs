@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   Box,
   Flex,
@@ -92,7 +92,7 @@ export const AboutMeSection = () => {
         bg={useColorModeValue('blackAlpha.50', 'gray.600')}
       >
         <Stack
-          as={motion.div}
+          as={m.div}
           initial="hidden"
           whileInView="visible"
           textAlign={'center'}
@@ -161,12 +161,12 @@ export const AboutMeSection = () => {
               borderRadius={6}
               ml={4}
             >
-              <motion.svg
+              <m.svg
                 viewBox="0 0 870 570"
                 initial="hidden"
                 whileInView="visible"
               >
-                <motion.path
+                <m.path
                   cx="100"
                   cy="100"
                   r="80"
@@ -176,37 +176,37 @@ export const AboutMeSection = () => {
                   d="M171.14 72.5H755.86C763.986 72.5 771.78 75.7281 777.526 81.4743C783.272 87.2204 786.5 95.0138 786.5 103.14V477.5H140.5V103.14C140.5 95.0138 143.728 87.2204 149.474 81.4743C155.22 75.7281 163.014 72.5 171.14 72.5Z"
                   fill="none"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M39.3099 444.27C47.2518 444.27 53.6899 437.832 53.6899 429.89C53.6899 421.948 47.2518 415.51 39.3099 415.51C31.3681 415.51 24.9299 421.948 24.9299 429.89C24.9299 437.832 31.3681 444.27 39.3099 444.27Z"
                   fill="#AB91DF"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M79.8199 444.27C87.7618 444.27 94.1999 437.832 94.1999 429.89C94.1999 421.948 87.7618 415.51 79.8199 415.51C71.8781 415.51 65.4399 421.948 65.4399 429.89C65.4399 437.832 71.8781 444.27 79.8199 444.27Z"
                   fill="#AB91DF"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M120.34 444.27C128.282 444.27 134.72 437.832 134.72 429.89C134.72 421.948 128.282 415.51 120.34 415.51C112.398 415.51 105.96 421.948 105.96 429.89C105.96 437.832 112.398 444.27 120.34 444.27Z"
                   fill="#AB91DF"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M160.85 444.27C168.792 444.27 175.23 437.832 175.23 429.89C175.23 421.948 168.792 415.51 160.85 415.51C152.908 415.51 146.47 421.948 146.47 429.89C146.47 437.832 152.908 444.27 160.85 444.27Z"
                   fill="#AB91DF"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M201.37 444.27C209.312 444.27 215.75 437.832 215.75 429.89C215.75 421.948 209.312 415.51 201.37 415.51C193.428 415.51 186.99 421.948 186.99 429.89C186.99 437.832 193.428 444.27 201.37 444.27Z"
                   fill="#AB91DF"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M241.88 444.27C249.822 444.27 256.26 437.832 256.26 429.89C256.26 421.948 249.822 415.51 241.88 415.51C233.938 415.51 227.5 421.948 227.5 429.89C227.5 437.832 233.938 444.27 241.88 444.27Z"
                   fill="#AB91DF"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M837.5 477H89.5V519H837.5V477Z"
                   stroke="black"
@@ -214,17 +214,17 @@ export const AboutMeSection = () => {
                   strokeMiterlimit="10"
                   fill={'none'}
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M371 20H39V235H371V20Z"
                   fill="#78E5E1"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M855 374H455V422H855V374Z"
                   fill="#F8DA96"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M484.42 352H455V304H547.09"
                   stroke="black"
@@ -232,7 +232,7 @@ export const AboutMeSection = () => {
                   strokeMiterlimit="10"
                   fill={'none'}
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M855 304V352H747.15"
                   stroke="black"
@@ -240,14 +240,14 @@ export const AboutMeSection = () => {
                   strokeMiterlimit="10"
                   fill={'none'}
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M547.09 304H739.92"
                   stroke="black"
                   strokeWidth="2"
                   strokeMiterlimit="10"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M333 1H1V216H333V1Z"
                   stroke="black"
@@ -255,17 +255,17 @@ export const AboutMeSection = () => {
                   strokeMiterlimit="10"
                   fill="none"
                 />
-                <motion.path
+                <m.path
                   variants={draw}
                   d="M534 474H393V502H534V474Z"
                   fill="#E2E2E2"
                 />
-              </motion.svg>
+              </m.svg>
             </Box>
           </Flex>
 
           <Box
-            as={motion.div}
+            as={m.div}
             position="absolute"
             left="3rem"
             top="3rem"

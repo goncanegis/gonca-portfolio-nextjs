@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react';
 
 import ContactForm from './ContactForm';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 const contactSectionVariants = {
   hidden: {
@@ -88,7 +88,7 @@ const scooterVariants = {
 export default function ContactSection() {
   return (
     <Flex
-      as={motion.section}
+      as={m.section}
       initial="hidden"
       whileInView="visible"
       variants={contactSectionVariants}
@@ -138,7 +138,7 @@ export default function ContactSection() {
         {/* Animated background */}
 
         <Image
-          as={motion.img}
+          as={m.img}
           src={'/images/hills.svg'}
           alt="hills"
           variants={hillVariants}
@@ -152,7 +152,7 @@ export default function ContactSection() {
         />
 
         <Image
-          as={motion.img}
+          as={m.img}
           src={'/images/circle.svg'}
           alt="sun"
           variants={sunVariants}
@@ -166,7 +166,7 @@ export default function ContactSection() {
         />
 
         <Image
-          as={motion.img}
+          as={m.img}
           position="absolute"
           left="2%"
           bottom="0%"
@@ -179,7 +179,7 @@ export default function ContactSection() {
         />
 
         <Image
-          as={motion.img}
+          as={m.img}
           position="absolute"
           right="2%"
           bottom="0%"
@@ -192,7 +192,7 @@ export default function ContactSection() {
         />
 
         <Image
-          as={motion.img}
+          as={m.img}
           position="absolute"
           right="17%"
           top={{ md: '67%', lg: '58%', xl: '56%' }}
@@ -205,7 +205,7 @@ export default function ContactSection() {
         />
 
         <Image
-          as={motion.img}
+          as={m.img}
           position="absolute"
           left="100%"
           bottom={'0%'}
