@@ -1,8 +1,19 @@
 import React from 'react';
-import { AboutMeSection } from '../components/AboutMeSection';
+import dynamic from 'next/dynamic';
 import { HeroSection } from '../components/HeroSection';
-import ProjectsSection from '../components/ProjectsSection';
-import ContactSection from '../components/ContactSection';
+
+const AboutMeSection = dynamic(
+  () => import('../components/AboutMeSection').then(mod => mod.AboutMeSection),
+  { ssr: false }
+);
+const ProjectsSection = dynamic(
+  () => import('../components/ProjectsSection'),
+  { ssr: false }
+);
+const ContactSection = dynamic(
+  () => import('../components/ContactSection'),
+  { ssr: false }
+);
 
 const HomePage = () => {
   return (
