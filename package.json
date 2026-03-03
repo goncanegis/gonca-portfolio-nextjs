@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/form-control": "^2.0.1",
-    "@chakra-ui/icons": "^2.0.0",
-    "@chakra-ui/react": "^2.0.2",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
+    "@chakra-ui/icons": "^2.2.4",
+    "@chakra-ui/react": "^2.10.9",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@formspree/react": "^2.2.5",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^14.2.0",
     "eslint": "^8.17.0",
-    "framer-motion": "^6.3.3",
+    "framer-motion": "^11.18.2",
     "next": "^16.1.6",
     "next-sitemap": "^4.2.3",
     "react": "^18.2.0",
@@ -33,5 +32,10 @@
       "react-app/jest"
     ]
   },
-  "browserslist": "last 2 versions"
+  "browserslist": "last 2 versions",
+  "overrides": {
+    "@chakra-ui/theme-tools": {
+      "@chakra-ui/styled-system": "2.12.4"
+    }
+  }
 }

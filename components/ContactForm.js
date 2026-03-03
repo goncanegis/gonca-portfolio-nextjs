@@ -25,7 +25,7 @@ import { MdEmail } from 'react-icons/md';
 import { BsFillPersonFill } from 'react-icons/bs';
 
 export default function ContactForm() {
-  const formId = process.env.NEXT_PUBLIC_CONTACT_FORM_ID || 'xnqyegqz';
+  const formId = process.env.NEXT_PUBLIC_CONTACT_FORM_ID || 'placeholder';
   const [state, handleSubmit, reset] = useForm(formId);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -45,7 +45,7 @@ export default function ContactForm() {
       }, 2000);
     }
 
-    if (state.errors.length > 0) {
+    if (state.errors && state.errors.length > 0) {
       toast.error('Oops, something went wrong!');
     }
   }, [state]);

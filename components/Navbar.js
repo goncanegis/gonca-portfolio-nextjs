@@ -70,15 +70,13 @@ export const Navbar = () => {
           justify={{ base: 'center', md: 'start' }}
           align={'center'}
         >
-          <NextLink href="/" legacyBehavior>
-            <a>
-              <ChakraNextImage
-                src={'/images/logo.svg'}
-                width={50}
-                height={50}
-                alt="logo"
-              />
-            </a>
+          <NextLink href="/">
+            <ChakraNextImage
+              src={'/images/logo.svg'}
+              width={50}
+              height={50}
+              alt="logo"
+            />
           </NextLink>
 
           <Flex
@@ -91,7 +89,7 @@ export const Navbar = () => {
             <Stack direction={'row'} spacing={8}>
               {NAV_ITEMS.map(navItem => (
                 <CustomButton
-                  key={Math.floor(Math.random() * 100)}
+                  key={navItem.label}
                   href={navItem.href}
                   label={navItem.label}
                 />
@@ -159,7 +157,7 @@ export const Navbar = () => {
         {NAV_ITEMS.map(navItem => (
           <Stack
             as={motion.div}
-            key={Math.floor(Math.random() * 100)}
+            key={navItem.label}
             spacing={4}
             variants={mobileMenuItemVariants}
             onClick={onToggle}
