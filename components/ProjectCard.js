@@ -21,12 +21,17 @@ export default function ProjectCard({
   description,
   image,
 }) {
+  const cardBg = useColorModeValue('white', 'gray.900');
+  const headingColor = useColorModeValue('gray.700', 'gray.200');
+  const textColor = useColorModeValue('gray.600', 'gray.300');
+  const linkColor = useColorModeValue('#805AD5', '#D6BCFA');
+
   return (
     <Center py={6}>
       <Box
         maxW={'445px'}
         w={'full'}
-        bg={useColorModeValue('white', 'gray.900')}
+        bg={cardBg}
         boxShadow={'2xl'}
         rounded={'md'}
         p={6}
@@ -46,18 +51,17 @@ export default function ProjectCard({
             fill
             sizes="(max-width: 768px) 100vw, 445px"
             style={{ objectFit: 'cover' }}
-            priority
           />
         </Box>
         <Stack>
           <Heading
-            color={useColorModeValue('gray.700', 'gray.200')}
+            color={headingColor}
             fontSize={'2xl'}
             fontFamily={'body'}
           >
             {title}
           </Heading>
-          <Text color={useColorModeValue('gray.600', 'gray.300')}>
+          <Text color={textColor}>
             {description}
           </Text>
         </Stack>
@@ -80,7 +84,7 @@ export default function ProjectCard({
               display="inline-flex"
               title="View Github repo"
               mr={5}
-              color={useColorModeValue('#805AD5', '#D6BCFA')}
+              color={linkColor}
               _hover={{
                 color: '#6B46C1',
               }}
@@ -101,7 +105,7 @@ export default function ProjectCard({
               title="Visit live site"
               mr={5}
               ml={5}
-              color={useColorModeValue('#805AD5', '#D6BCFA')}
+              color={linkColor}
               _hover={{
                 color: '#6B46C1',
               }}

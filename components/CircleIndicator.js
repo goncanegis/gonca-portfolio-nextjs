@@ -1,21 +1,22 @@
 import * as React from 'react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import {
   motion,
-  useViewportScroll,
+  useScroll,
   useSpring,
   useTransform,
+  useMotionValueEvent,
 } from 'framer-motion';
 
-import { Box, useColorMode } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
 export const CircleIndicator = () => {
   const [isComplete, setIsComplete] = useState(false);
-  const { scrollYProgress } = useViewportScroll();
+  const { scrollYProgress } = useScroll();
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
   const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
 
-  useEffect(() => yRange.onChange(v => setIsComplete(v >= 1)), [yRange]);
+  useMotionValueEvent(yRange, 'change', v => setIsComplete(v >= 1));
 
   return (
     <Box

@@ -12,6 +12,10 @@ import {
 import { CustomButton } from './CustomButton';
 
 export const HeroSection = () => {
+  const headingColor = useColorModeValue('purple.500', '#FBDC8D');
+  const subheadingColor = useColorModeValue('gray.600', 'gray.200');
+  const taglineColor = useColorModeValue('gray.600', 'gray.400');
+  const heroBg = useColorModeValue('transparent', 'gray.700');
   const heroImageVariants = {
     hidden: {
       opacity: 0,
@@ -89,7 +93,7 @@ export const HeroSection = () => {
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
-            color={useColorModeValue('purple.500', '#FBDC8D')}
+            color={headingColor}
             style={{ display: 'inline-flex' }}
           >
             Hi there!
@@ -115,7 +119,7 @@ export const HeroSection = () => {
         <Text
           as="h1"
           fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-          color={useColorModeValue('gray.600', 'gray.200')}
+          color={subheadingColor}
           sx={{ marginTop: '0 !important' }}
         >
           I'm Gonca.
@@ -134,7 +138,7 @@ export const HeroSection = () => {
           variants={heroImageVariants}
           position="relative"
           overflow={'hidden'}
-          bg={useColorModeValue('transparent', 'gray.700')}
+          bg={heroBg}
           borderRadius={8}
         >
           <Image
@@ -149,6 +153,7 @@ export const HeroSection = () => {
             left={'20%'}
             w={'80%'}
             zIndex={1}
+            fetchPriority="high"
           />
           <Image
             as={motion.img}
@@ -158,6 +163,7 @@ export const HeroSection = () => {
             position="absolute"
             w={'38%'}
             left={'37%'}
+            fetchPriority="high"
           />
           <Image
             as={motion.img}
@@ -231,7 +237,7 @@ export const HeroSection = () => {
           />
         </Flex>
         <Text
-          color={useColorModeValue('gray.600', 'gray.400')}
+          color={taglineColor}
           fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}
           lineHeight={'110%'}
           mt={6}

@@ -12,6 +12,8 @@ export const ChakraNextImage = chakra(Image, {
       'fill',
       'sizes',
       'priority',
+      'fetchPriority',
+      'loading',
       'style',
       'onLoadingComplete',
     ].includes(prop),
