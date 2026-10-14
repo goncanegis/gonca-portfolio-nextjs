@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { transition, whileTap } from './constants';
 
 export const SunIcon = () => {
@@ -14,7 +14,7 @@ export const SunIcon = () => {
   };
 
   return (
-    <motion.svg
+    <m.svg
       key="sun"
       width="1em"
       height="1em"
@@ -25,7 +25,7 @@ export const SunIcon = () => {
       // Centers the rotation anchor point vertically & horizontally
       style={{ originX: '50%', originY: '50%' }}
     >
-      <motion.circle
+      <m.circle
         cx="11.9998"
         cy="11.9998"
         r="5.75375"
@@ -34,7 +34,7 @@ export const SunIcon = () => {
         animate="animate"
         variants={coreVariants}
       />
-      <motion.g initial="initial" animate="animate" variants={raysVariants}>
+      <m.g initial="initial" animate="animate" variants={raysVariants}>
         <circle
           cx="3.08982"
           cy="6.85502"
@@ -65,7 +65,7 @@ export const SunIcon = () => {
           fill="currentColor"
         />
         <circle cx="12" cy="1.71143" r="1.71143" fill="currentColor" />
-      </motion.g>
-    </motion.svg>
+      </m.g>
+    </m.svg>
   );
 };

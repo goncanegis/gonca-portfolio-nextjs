@@ -15,7 +15,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { ChakraNextImage } from './ChakraNextImage';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { CustomButton } from './CustomButton';
 import { SocialButton } from './SocialButton';
 
@@ -143,7 +143,7 @@ export const Navbar = () => {
       {/* Mobile Nav */}
 
       <Stack
-        as={motion.div}
+        as={m.div}
         initial="hidden"
         animate={isOpen ? 'show' : 'hidden'}
         variants={mobileMenuVariants}
@@ -156,7 +156,7 @@ export const Navbar = () => {
       >
         {NAV_ITEMS.map(navItem => (
           <Stack
-            as={motion.div}
+            as={m.div}
             key={navItem.label}
             spacing={4}
             variants={mobileMenuItemVariants}

@@ -22,7 +22,6 @@ export default function Document() {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#00aba9" />
         <meta name="theme-color" content="#222222" />
@@ -37,14 +36,30 @@ export default function Document() {
           crossOrigin="true"
         />
         <link
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        />
+        <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
           rel="stylesheet"
+          media="print"
+          onLoad="this.media='all'"
         />
+        <noscript>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
+        </noscript>
+        <link rel="preload" as="image" href="/images/scene.svg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/images/woman.svg" fetchPriority="high" />
       </Head>
       <body>
         <ColorModeScript />
         <Main />
         <NextScript />
+        <script dangerouslySetInnerHTML={{ __html: `window.addEventListener('load',function(){var l=document.createElement('link');l.rel='manifest';l.href='/site.webmanifest';document.head.appendChild(l)})` }} />
       </body>
     </Html>
   );

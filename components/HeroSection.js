@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   Flex,
   Container,
@@ -12,6 +12,10 @@ import {
 import { CustomButton } from './CustomButton';
 
 export const HeroSection = () => {
+  const headingColor = useColorModeValue('purple.500', '#FBDC8D');
+  const subheadingColor = useColorModeValue('gray.600', 'gray.200');
+  const taglineColor = useColorModeValue('gray.600', 'gray.400');
+  const heroBg = useColorModeValue('transparent', 'gray.700');
   const heroImageVariants = {
     hidden: {
       opacity: 0,
@@ -89,13 +93,13 @@ export const HeroSection = () => {
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
-            color={useColorModeValue('purple.500', '#FBDC8D')}
+            color={headingColor}
             style={{ display: 'inline-flex' }}
           >
             Hi there!
           </Text>
           <Text
-            as={motion.h1}
+            as={m.h1}
             style={{
               display: 'inline-flex',
               marginLeft: '0.5em',
@@ -115,7 +119,7 @@ export const HeroSection = () => {
         <Text
           as="h1"
           fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-          color={useColorModeValue('gray.600', 'gray.200')}
+          color={subheadingColor}
           sx={{ marginTop: '0 !important' }}
         >
           I'm Gonca.
@@ -128,17 +132,17 @@ export const HeroSection = () => {
           pt={8}
           pb={2}
           px={6}
-          as={motion.div}
+          as={m.div}
           initial={'hidden'}
           animate={'show'}
           variants={heroImageVariants}
           position="relative"
           overflow={'hidden'}
-          bg={useColorModeValue('transparent', 'gray.700')}
+          bg={heroBg}
           borderRadius={8}
         >
           <Image
-            as={motion.img}
+            as={m.img}
             src={'/images/scene.svg'}
             alt={'hero image scene'}
             initial="hidden"
@@ -149,18 +153,20 @@ export const HeroSection = () => {
             left={'20%'}
             w={'80%'}
             zIndex={1}
+            fetchPriority="high"
           />
           <Image
-            as={motion.img}
+            as={m.img}
             src={'/images/woman.svg'}
             alt="woman"
             variants={womanImageVariants}
             position="absolute"
             w={'38%'}
             left={'37%'}
+            fetchPriority="high"
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={lampImageVariants}
             src={'/images/lamp.svg'}
             alt="lamp"
@@ -169,7 +175,7 @@ export const HeroSection = () => {
             left={'15%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={plantImageVariants}
             src={'/images/plant.svg'}
             alt="plant"
@@ -179,7 +185,7 @@ export const HeroSection = () => {
           />
 
           <Image
-            as={motion.img}
+            as={m.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics1.svg'}
             alt="graphics"
@@ -189,7 +195,7 @@ export const HeroSection = () => {
             left={'62%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics2.svg'}
             alt="graphics"
@@ -199,7 +205,7 @@ export const HeroSection = () => {
             left={'72%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics3.svg'}
             alt="graphics"
@@ -209,7 +215,7 @@ export const HeroSection = () => {
             left={'75%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={heroImageChildrenVariants}
             src={'/images/graphics4.svg'}
             alt="graphics"
@@ -219,7 +225,7 @@ export const HeroSection = () => {
             left={'84%'}
           />
           <Image
-            as={motion.img}
+            as={m.img}
             variants={bookImageVariants}
             src={'/images/book.svg'}
             alt="book"
@@ -231,7 +237,7 @@ export const HeroSection = () => {
           />
         </Flex>
         <Text
-          color={useColorModeValue('gray.600', 'gray.400')}
+          color={taglineColor}
           fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}
           lineHeight={'110%'}
           mt={6}
